@@ -84,3 +84,11 @@ fragment friendFragment on Friend {
   age
 }
 ```
+
+### Delete item with mutation
+
+```graphql
+mutation {
+  deleteFriend(id: "5d128f75f6524f6aab902759")
+}
+```
