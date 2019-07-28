@@ -5,7 +5,7 @@ import Sequelize from 'sequelize';
 
 // Mongo connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/friends', {});
+mongoose.connect('mongodb://localhost/friends', { useNewUrlParser: true });
 
 const friendsSchema = new mongoose.Schema({
   firstName: {
